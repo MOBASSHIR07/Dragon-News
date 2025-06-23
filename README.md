@@ -107,9 +107,6 @@ Firebase Configuration
 Create a file:
 src/Firebase/Firebase-config.js
 
-js
-Copy
-Edit
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
@@ -123,6 +120,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export default app;
+
 
 Run the App
 
@@ -149,6 +147,7 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+ 
 🤝 Contributing
 Contributions are welcome!
 Fork the repository → Create a new branch → Make changes → Submit a Pull Request.
