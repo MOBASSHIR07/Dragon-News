@@ -99,3 +99,64 @@
    ```bash
    git clone <repository_url>
    cd dragon-news
+npm install
+# or
+yarn install
+Firebase Configuration
+
+Create a file:
+src/Firebase/Firebase-config.js
+
+js
+Copy
+Edit
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+export default app;
+
+Run the App
+
+bash
+Copy
+Edit
+npm run dev
+# or
+yarn dev
+📁 Project Structure
+src/
+├── assets/                 # Static images (logo, user icons, Q-zone)
+├── components/             # Reusable UI components
+│   ├── layout-components/  # Navbar and sidebar layout
+├── Firebase/
+│   └── Firebase-config.js  # Firebase setup
+├── layouts/                # AuthLayout and HomeLayout
+├── pages/                  # Login, Register, NewsDetails, UpdateProfile, etc.
+├── provider/
+│   └── AuthProvider.jsx    # Firebase Auth context provider
+├── routes/
+│   ├── PrivateRoute.jsx
+│   └── Router.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+🤝 Contributing
+Contributions are welcome!
+Fork the repository → Create a new branch → Make changes → Submit a Pull Request.
+
+🪪 License
+This project is open-source under the MIT License.
+
+📬 Contact
+Sadikul Mobasshir
+📧 Email: sadikulmobasshir22@gmail.com
+
